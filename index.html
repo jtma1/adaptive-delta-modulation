@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adaptive Delta Modulation</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Scripts (Chart.js + index.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="./js/index.js"></script>
+  </head>
+
+  <body>
+    <!-- Title Area -->
+    <h1>
+      <center>Adaptive Delta Modulation</center>
+    </h1>
+
+    <!-- Chart Area (canvas) -->
+    <div>
+      <canvas
+        width="695"
+        height="347"
+        style="
+          display: block;
+          box-sizing: border-box;
+          height: 347px;
+          width: 695px;
+        "
+        id="mainChart"
+      ></canvas>
+    </div>
+
+    <!-- Slider Area -->
+    <!-- Message Signal Frequency Slider -->
+    <div class="slidecontainer">
+      <h2>Message Frequency Slider</h2>
+      <input
+        type="range"
+        min="1000"
+        max="10000"
+        step="1000"
+        value="1000"
+        class="slider"
+        id="msgFrequencyRange"
+      />
+      <p>
+        Message Signal Frequency Value (Hz):
+        <span id="msgFrequencyTextArea"></span>
+      </p>
+    </div>
+
+    <!-- Delta Frequency Slider -->
+    <div class="slidecontainer">
+      <h2>Delta Frequency Slider</h2>
+      <input
+        type="range"
+        min="1000"
+        max="10000"
+        step="1000"
+        value="1000"
+        class="slider"
+        id="deltaFrequencyRange"
+      />
+      <p>
+        Delta Modulation Frequency Value (Hz):
+        <span id="deltaFrequencyTextArea"></span>
+      </p>
+    </div>
+
+    <!-- Delta Value Slider -->
+    <div class="slidecontainer">
+      <h2>Delta Slider</h2>
+      <input
+        type="range"
+        min="1"
+        max="10"
+        step="1"
+        value="1"
+        class="slider"
+        id="deltaValueRange"
+      />
+      <p>Delta Value (Volts): <span id="deltaValueTextArea"></span></p>
+    </div>
+
+    <!-- Bottom of the page things -->
+    <div>
+      <center>
+        <p>Final Project</p>
+        <p>ECE 4705 - Communication Systems</p>
+        <p>Jarod Ma</p>
+
+        <a href="https://github.com/jtma1/adaptive-delta-modulation#readme"
+          >Link to source code</a
+        >
+      </center>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+# Vscode folder
+.vscode
+
+# Formatting stuff
+.prettierrc
+
+# node_modules folder
+node_modules
